@@ -1,0 +1,105 @@
+/*
+Created Date: 2021.09.13 by Le Minh Truong
+Modified on: 2021.10.06 by Tung Lam Nguyen - Fixed the style and look of the email form
+Modified on: 2021.10.08 by Tung Lam Nguyen - Added styling for content input box
+This file defines the style of the components of the email form
+
+*/
+$lightgren: #d5f5e3;
+$mediumgreen: #82e0aa;
+$white: #ffffff;
+$darkgreen: #378866;
+
+.box {
+    position: relative;
+    width:50%;
+    @media (min-width: 800px) and (max-width: 1100px) {
+        width:50%;
+    }
+    @media (max-width: 800px) {
+        width:80%;
+    }
+    
+    background: $lightgren;
+    border-radius: 1vh;
+    overflow: visible;
+    max-width: 800px;
+    margin: 30px auto;
+    overflow: auto;
+    min-height: 300px;
+    border: 1px solid #000;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.field {
+    font-family: "Karla";
+    font-weight: bolder;
+    color: black;
+    line-height: 1.5vh;
+    margin: 20px 0;
+}
+.textInput {
+    background: $white;
+    font-family: "Karla";
+    overflow: scroll;
+
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border: 2px solid #000;
+}
+
+.contentInput {
+    background: $white;
+    font-family: "Karla";
+    overflow: scroll;
+    resize: vertical;
+
+    width: 100%;
+    height: 160px;
+    margin: 5px;
+    padding: 3px 7px;
+    font-size: 17px;
+    border: 2px solid #000;
+}
+button.submitButton {
+    // So it's set in the bottom right corner
+    // position: absolute;
+    right:50%;
+    left: 45%;
+    bottom: 12px;
+
+    border-radius: 15px;
+    padding: 2vh;
+    border: 1px black solid;
+    outline: 1px black solid;
+    min-width: fit-content;
+    
+    background-color: $darkgreen;
+    color: $white;
+    font-family: "Karla", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    line-height: 2.2vh;
+    font-size: 2.5vh;
+    &:hover{
+        background-color:$mediumgreen;
+        margin: -2px;
+    }
+    transition: 0.1s ease;
+}
+
+.box > .close {
+    cursor: pointer;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
