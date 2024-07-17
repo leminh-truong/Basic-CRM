@@ -50,6 +50,10 @@ III. To access the deployed application in the Heroku server, use following link
     - Login credentials:
       Username: admin
       Password: 4567
+
+    - New credentials:
+      Username: admin1
+      Password: 12345
   
   3. To access other pages of the deployed application, use the same URLs shown in part II and replace  http://localhost:5000 with https://crm-t60.herokuapp.com
 
